@@ -94,12 +94,11 @@
   text-transform: uppercase;
   z-index: 1;
   font-weight: bold;
-  letter-spacing: 15px;
 }
 
 .aligned-text {
   display: block;
-  letter-spacing: 30px;
+  letter-spacing: 20px;
 }
 
 .aligned-text_center {
@@ -113,11 +112,11 @@
 }
 
 .letter-spacing-extended {
-  letter-spacing: 60px;
+  letter-spacing: 50px;
 }
 
-.remove-spacing {
-  letter-spacing: normal;
+.no-letter-spacing {
+  letter-spacing: 0;
 }
 
 .cover__description {
@@ -166,6 +165,7 @@
   font-size: 40px;
   line-height: 1;
   text-transform: uppercase;
+  margin-left: 50px;
 }
 
 .lots__card-list {
@@ -218,10 +218,6 @@
   background-size: cover;
 }
 
-.lots__heading {
-  margin-left: 50px;
-}
-
 .card__title {
   position: relative;
   z-index: 1;
@@ -252,7 +248,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 25px;
-  padding: 50px 50px;
+  padding: 0px 50px;
 }
 
 .about__column {
