@@ -99,6 +99,7 @@
 
 .aligned-text {
   display: block;
+  letter-spacing: 30px;
 }
 
 .aligned-text_center {
@@ -189,9 +190,14 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 0px;
-  width: auto;
-  height: 100%;
-  padding: 30px 40px 30px 40px;
+  width: 334px;
+  height: 563px;
+  opacity: 0px;
+  padding: 20px 20px 40px 50px;
+}
+
+.first_card-item {
+  margin-left: 40px;
 }
 
 .card_type_film {
@@ -210,6 +216,10 @@
   background-image: url(../images/card-lot-03.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.lots__heading {
+  margin-left: 50px;
 }
 
 .card__title {
@@ -242,7 +252,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 25px;
-  padding: 0 50px;
+  padding: 50px 50px;
 }
 
 .about__column {
