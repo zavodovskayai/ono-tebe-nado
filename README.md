@@ -1,1 +1,1 @@
-https://github.com/zavodovskayai/ono-tebe-nado_web
+https://github.com/zavodovskayai/ono-tebe-nado
