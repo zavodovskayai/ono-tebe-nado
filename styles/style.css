@@ -197,7 +197,7 @@
 }
 
 .first_card-item {
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
 .card_type_film {
@@ -237,7 +237,7 @@
 
 .lots__look-more-link {
   display: block;
-  margin: 40px 0 0 40px;
+  margin: 40px 0 -10px 40px;
   font-size: 20px;
   text-transform: lowercase;
   text-decoration-line: underline;
@@ -248,7 +248,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 25px;
-  padding: 0px 50px;
+  padding: -10px -50px;
 }
 
 .about__column {
@@ -295,7 +295,7 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 180px 50px 80px;
+  padding: 100px 50px 100px;
 }
 .adress_footer {
   padding-right: 15.5%;
