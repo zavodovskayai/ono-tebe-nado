@@ -1,8 +1,8 @@
-/* оформляем шапку */
+/* я пыталась исправить... */
 .header {
   display: flex;
   align-items: center;
-  padding: 90px 50px 90px;
+  padding: 90px 70px 90px 47px;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -20,7 +20,8 @@
 
 .header__links-list {
   display: flex;
-  gap: 32px;
+  gap: 30px;
+  text-indent: 4px;
 }
 
 .header__links-list-item {
@@ -33,9 +34,8 @@
 
 .header__logo {
   display: block;
-  justify-self: center;
-  align-self: center;
-  width: 140px;
+  width: 135px;
+  margin-left: 20px;
 }
 
 .header__link_active {
@@ -47,15 +47,14 @@
 }
 
 .address {
-  font-style: inherit; /* пыталась задать параметры, в итоге задала наследование стиля и 
-  адреса стали красиво отображаться https://basecourse.ru/css/text.php*/
-
+  font-style: inherit;
+  font-size: 18px;
 }
 
 .header__address {
+  margin-right: 15px;
   justify-self: end;
   flex: 0 0 auto;
-  width: 25%;
   line-height: 135%;
   font-style: normal;
 }
@@ -63,12 +62,17 @@
 .main {
   display: flex;
   flex-direction: column;
-  gap: 185px;
+  margin-top: 3px;
 }
 
 .cover {
   position: relative;
-  padding: 165px 50px 50px 50px;
+  width: 1100px;
+  height: 760px;
+  gap: 0px;
+  opacity: 0px;
+  padding-top: 165px;
+  padding-left: 50px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -76,12 +80,11 @@
 
 .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
   z-index: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.55);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .cover__title {
@@ -89,7 +92,6 @@
   display: flex;
   flex-direction: column;
   font-size: 100px;
-  gap: 20px;
   color:#FFF;
   text-transform: uppercase;
   z-index: 1;
@@ -98,35 +100,43 @@
 
 .aligned-text {
   display: block;
-  letter-spacing: 20px;
+  letter-spacing: 2px;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 38px;
 }
 
 .aligned-text_center {
   line-height: 1;
-  text-align: center;
+  margin: 20px 2px 20px 285px;
+  letter-spacing: 5px; 
 }
 
-.aligned-text_right {
-  line-height: 1;
-  text-align: right;
+
+.no-letter-spacing { 
+  letter-spacing: 0px; 
+  
+} 
+
+.letter-extended {
+  letter-spacing: 10px; 
 }
 
-.letter-spacing-extended {
-  letter-spacing: 50px;
-}
-
-.no-letter-spacing {
-  letter-spacing: 0;
-}
+.aligned-text_right { 
+  line-height: 1;  
+  margin-left: 585px;
+  padding-right: 0px;
+  letter-spacing: 30px; 
+} 
 
 .cover__description {
   position: relative;
   z-index: 1;
   display: flex;
-
   align-items: center;
+  padding: 135px 0 0 30px;
   gap: 78px;
-  padding: 136px 0 0;
 }
 
 .cover__description-text {
@@ -156,11 +166,11 @@
 }
 
 .lots {
-  padding: 0 0px;
+  padding: 182px 0px;
 }
 
 .lots__heading {
-  padding: 0 0 30px 40px;
+  padding: 0 0 30px 15px;
   font-weight: bold;
   font-size: 40px;
   line-height: 1;
@@ -169,9 +179,9 @@
 }
 
 .lots__card-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 25px;
+  display: flex;
+  place-content: center space-between;
+  margin: 0 25px 0 25px; 
   list-style: none;
 }
 
@@ -182,22 +192,16 @@
 .card-link {
   display: block;
   height: 100%;
+  text-decoration-line: none;
 }
 
 .card {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 0px;
-  width: 334px;
+  max-width: 334px;
   height: 563px;
-  opacity: 0px;
-  padding: 20px 20px 40px 50px;
-}
-
-.first_card-item {
-  margin-left: 20px;
+  padding: 50px 40px 50px 40px;
 }
 
 .card_type_film {
@@ -229,30 +233,32 @@
 }
 
 .card__text {
-  position: relative;
+  text-decoration: none;
   z-index: 1;
   color: #FFF;
   font-size: 20px;
+  position: absolute;
+  bottom: 50px;
+  right: 40px;
+  left: 40px;
 }
 
 .lots__look-more-link {
   display: block;
-  margin: 40px 0 -10px 40px;
   font-size: 20px;
   text-transform: lowercase;
   text-decoration-line: underline;
   text-underline-position: under;
+  margin: 30px 0 0 65px;
 }
 
 .about {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 25px;
-  padding: -10px -50px;
+  display: flex;
+  margin-left: 20px;
 }
 
 .about__column {
-  justify-self: center;
+  justify-content: center;
 }
 
 .about__column_text {
@@ -267,6 +273,7 @@
   height: 240px;
   border-radius: 50%;
   background-color: #000000;
+  margin-left: 53px;
 }
 
 .about__logo-image {
@@ -274,7 +281,7 @@
 }
 
 .about__title {
-  padding: 100px 0 104px;
+  padding: 105px 0px 100px 70px;
   font-weight: bold;
   font-size: 40px;
   line-height: 1;
@@ -285,6 +292,9 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
+  padding: 4px 25px 0 70px;
+  word-spacing: 0px;
+  letter-spacing: 0px;
 }
 
 .about__text p {
@@ -295,22 +305,21 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 180px 50px 100px;
 }
+
 .adress_footer {
-  padding-right: 15.5%;
+  padding: 186px 0px 80px 51px;
 }
 
 .footer__social-icon {
   width: auto;
   height: 48px;
+  top: 0;
 }
 
 .footer__menu {
-  flex: 0 0 auto;
-  width: auto;
-  display: flex;
-  flex-direction: column;
+  top: 0px;
+  margin-left: 0px;
 }
 
 .footer__menu-list {
@@ -330,6 +339,8 @@
 
 .footer__social-list {
   display: flex;
-  gap: 48px;
+  padding-top: 0;
+  gap: 38px;
   list-style: none;
 }
+
