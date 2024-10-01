@@ -308,13 +308,14 @@
 }
 
 .adress_footer {
-  padding: 186px 0px 80px 51px;
+  padding: 190px 0px 80px 51px;
 }
 
 .footer__social-icon {
   width: auto;
   height: 48px;
   top: 0;
+  padding-right: 20px;
 }
 
 .footer__menu {
